@@ -1,0 +1,37 @@
+.head {
+    height: 150px;
+}
+
+.button {
+    margin: auto 60px;
+    background: var(--Primary_Color);
+    color: white;
+    border-radius: 10px;
+    width: 70px;
+    height: 33px;
+    display: flex;
+}
+
+.list {
+    margin: auto 60px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin: auto 20px;
+}
+
+.img {
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 0 20px #89bddd78;
+    border-radius: 10px;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+}

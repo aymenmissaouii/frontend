@@ -1,0 +1,57 @@
+<app-head></app-head>
+<div class="body">
+    <div class="img">
+        <div class="text d-flex">
+            <div class="imgcontenttext">
+                <div class="d-flex justify-content-end">
+                    <p class="m-auto question">تبحث عن وضيفة أم تبحث عن موضف ؟ </p>
+                </div>
+                <div class="d-flex justify-content-end response">
+                    <p>.باندافاي يساعدك في الحصول على مبتغاك</p>
+                </div>
+                <div class="d-flex justify-content-end mt-4">
+                    <div class="needworker d-flex">
+                        <p class="m-auto"> أحتاج موظف </p>
+                    </div>
+                    <div class="needwork d-flex">
+                        <p class="m-auto"> أحتاج وظيفة </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="content">
+        <div class="title">التصميم و تعديل الفيديوهات</div>
+        <div class="montage d-flex justify-content-between">
+            <div class="card" *ngFor="let montage of montages">
+                <img class="cardimg" [src]="montage.img" alt="">
+                <div class="description mt-3">
+                    <div class="jobtitle">
+                        {{montage.jobtitle}}
+                    </div>
+                    <div class="name">{{montage.name}}</div>
+                    <div class="listdescription mt-4 mb-4" *ngFor="let list of montage.list">
+                        <div class="mt-1">{{list}}<img class="ms-2" src="assets/svg/success.svg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="title mt-5">التصوير و التعديل اللوني</div>
+        <div class="montage d-flex justify-content-between">
+            <div class="card" *ngFor="let montage of editings">
+                <img class="cardimg" [src]="montage.img" alt="">
+                <div class="description mt-3">
+                    <div class="jobtitle">
+                        {{montage.jobtitle}}
+                    </div>
+                    <div class="name">{{montage.name}}</div>
+                    <div class="listdescription mt-4 mb-4" *ngFor="let list of montage.list">
+                        <div class="mt-1">{{list}}<img class="ms-2" src="assets/svg/success.svg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

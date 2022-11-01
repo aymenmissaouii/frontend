@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    --Primary_Color: #18A1FF;
+    --Background_Color: #F5F7FB;
+    --Text_Color: #37535E;
+    --Shadow_Settings: 0 0 20px hsl(207, 29, 65, 25%);
+    --Border_Radius: 10px;
+}
